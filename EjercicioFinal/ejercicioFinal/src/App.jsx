@@ -4,7 +4,7 @@ import { scientists } from './Data/scientists';
 function App() {
   return (
     <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>Luchadores Profesionales</h1>
+      <h1>Científicos Notables</h1>
       {scientists.map((scientist, index) => (
         <CardScientist
           key={index}
