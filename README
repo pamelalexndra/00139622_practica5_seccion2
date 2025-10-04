@@ -1,0 +1,20 @@
+1. ¿Qué significa className en React?
+En JSX (el lenguaje que utiliza React para escribir interfaces) la palabra class no puede usarse directamente porque class es una palabra reservada en JavaScript para definir clases.
+Por eso, React utiliza className como el atributo equivalente a class de HTML. Es la alternativa para asignar clases CSS  a los elementos de un componente.
+
+En jsx:
+<div className="contenedor-principal">
+</div>
+
+En html:
+<div class="contenedor-principal"></div>
+
+2. ¿Las props tienen un límite?
+No, las props (propiedades) en React no tienen un límite en cantidad ni en tipo de datos.
+Se pueden pasar cadenas, números, booleanos, funciones, objetos, arreglos, incluso componentes completos.
+El límite práctico depende de la legibilidad del código y la eficiencia de la aplicación, pero React no impone un máximo.
+
+3. ¿Quién define los props?
+Las define el padre que invoca a un componente.
+El componente padre decide qué valores pasar.
+El componente hijo las recibe como parámetros de solo lectura (no puede modificarlas directamente).

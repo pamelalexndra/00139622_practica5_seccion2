@@ -17,3 +17,6 @@ const carrito = {
     return precio;
   }
 }
+
+// Comprobando que funciona
+console.log(carrito.precioTotal)
